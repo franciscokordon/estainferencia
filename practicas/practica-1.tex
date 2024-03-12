@@ -1,0 +1,129 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,oneside,fleqn,11pt]{article}
+\usepackage[solutions]{practicas}
+\usepackage{babel}
+
+\overfullrule5pt
+
+\Materia{Estadística e inferencia I}
+\Cuatrimestre{Primer Cuatrimestre --- 2024}
+\Practica{1}
+\Titulo{Estimadores [\textcolor{red}{v0.1}]}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Abreviaturas
+\newcommand\CC{\mathbb{C}}
+\newcommand\RR{\mathbb{R}}
+\newcommand\QQ{\mathbb{Q}}
+\newcommand\ZZ{\mathbb{Z}}
+\newcommand\NN{\mathbb{N}}
+\newcommand\PP{\mathbb{P}}
+\newcommand\N{\mathcal{N}}
+\newcommand\abs[1]{\lvert#1\rvert}
+\renewcommand\emptyset{\varnothing}
+
+\DeclareMathOperator{\GL}{GL}
+
+\newcommand\sg{\mathrm{sgn}}
+
+\newcommand\Un{\mathcal{U}}
+
+\newcommand\ord{\mathrm{ord}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% proclaiming things
+\theoremseparator{.}
+\newtheorem*{Definicion}{Definición}
+\theoremindent\parindent
+\newtheorem*{Teorema}{Teorema}
+\newtheorem*{Proposicion}{Proposición}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\maketitle
+
+\begin{ejercicios}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item
+Se analizó una muestra de 12 piezas de pan blanco de cierta marca y se
+determinó el porcentaje de carbohidratos contenido en cada una de las piezas,
+obteniéndose los siguientes valores:
+\begin{align*}
+  & 76.93, && 76.88, && 77.07, && 76.68, && 76.39, && 75.09, \\ 
+  & 77.67, && 76.88, && 78.15, && 76.50, && 77.16, && 76.42.
+\end{align*}
+
+\begin{ejitems}
+    \item Estimar el promedio del porcentaje de carbohidratos contenido en las
+piezas de pan de esta marca.
+    
+    \item Estimar la mediana del porcentaje de carbohidratos.
+    
+    \item Estimar la proporción de piezas de pan de esta marca cuyo contenido
+de carbohidratos no excede el 76.5\%.
+\end{ejitems}
+
+\item
+Se supone que la longitud en milímetros de cierto tipo de eje tiene una
+distribución normal con desvío estándar $\sigma = 0.05$. Se toma una muestra
+de 20 ejes y se observa que la longitud media de los ejes es de $52.3$.
+\begin{ejitems}
+  \item Hallar un intervalo de confianza para la verdadera longitud media de
+nivel 0.99.
+    
+  \item ¿Qué tamaño debe tener la muestra para que la longitud de un
+intervalo de nivel 0.99 sea a lo sumo 0.03?
+\end{ejitems}
+
+
+\item
+La nota de una prueba de aptitud sigue una distribución normal. Una muestra aleatoria de nueve alumnos de la ciudad arroja los siguientes resultados: $5, 8.1, 7.9, 3.3, 4.5, 6.2, 6.9, 7.5, 9.1$.
+
+\begin{ejitems}
+    \item Hallar un intervalo de confianza para la nota media de los alumnos de la ciudad.
+    
+    \item La nota media de todos los alumnos de la ciudad en ese mismo examen el año anterior es $7.50$. ¿Le parece que hay motivos para afirmar que la nota media de los alumnos ha cambiado con respecto al año anterior?
+\end{ejitems}
+
+
+
+\item
+Considere muestras aleatorias de cada una de las siguientes distribuciones:
+\begin{enumerate}[label=\roman*]
+  \item normal de parámetros $\mu$ y $\sigma^2$;
+  \item exponencial de parámetro $\lambda$;
+  \item Poisson de parámetro $\lambda$;
+  \item con PDF que depende de un parámetro $\theta\in (0,1)$; 
+  \begin{align*}
+    f(x;\theta) 
+    = \frac{1}{\theta}x^{(\frac{1}{\theta}-1)}I_{[0,1]}(x), 
+    \quad \text{donde  } 
+    I_{[0,1]}(x) = 
+    \begin{cases*} 
+      1 & si $0 \leq x \leq 1$, \\ 
+      0 & caso contrario;
+    \end{cases*}
+  \end{align*}
+  \item geométrica de parámetro $p$;
+  \item gamma de parámetros $\alpha$ y $\lambda$;
+  \item uniforme $\mathcal{U}[0,\theta]$. 
+\end{enumerate}
+\begin{ejitems}
+  \item Hallar en cada caso el estimador de momentos de los parámetros
+  \item Hallar en cada caso salvo vi
+el estimador de máxima verosimilitud de los parámetros (salvo vi)
+  \item Para i,ii,iii y vii decir si los estimadores son insesgados o 
+asintóticamente insesgados.
+  \item Calcular el ECM de los estimadores de $\theta$ en vii. Comparando
+uno con otro, ¿cuál de los dos estimadores usarías?
+\end{ejitems}
+
+
+
+
+
+\end{ejercicios}
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
